@@ -1,0 +1,98 @@
+/* ────────────────────────────────
+   SIMPLE PROJECT‑PAGE STYLES
+   (scoped under body.project-page)
+──────────────────────────────── */
+
+body.project-page {
+    /* inherit your dark palette automatically */
+    color: #fff;
+  }
+  
+  body.project-page .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+    line-height: 1.6;
+  }
+  
+  /* ------------- headings ------------ */
+  body.project-page .project-title {
+    margin: 0;
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+  }
+  
+  body.project-page .divider {
+    margin: .75rem 0 2.5rem;
+    border: none;
+    height: 2px;
+    background: currentColor;
+    opacity: .15;
+  }
+  
+  body.project-page h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+  }
+  
+  /* ------------- links row ------------ */
+  body.project-page .link-row {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  body.project-page .link-row a {
+    display: block;
+    padding: .6rem 1.25rem;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .15s;
+  }
+  
+  body.project-page .link-row a:hover {
+    background: currentColor;
+    color: #000;
+  }
+  
+  /* ------------- bullet list ---------- */
+  body.project-page .bullet-list {
+    padding-left: 1rem;
+  }
+  
+  /* ------------- responsive ----------- */
+  @media (max-width: 580px) {
+    body.project-page .project-title { font-size: 2.1rem; }
+    body.project-page .link-row { flex-direction: column; }
+  }
+  
+  /* ────────────────────────────────
+   PROJECT PAGE BACKDROP OVERRIDES
+──────────────────────────────── */
+
+/* 1) make the page itself black */
+body.project-page {
+    background-color: #000;
+    color: #fff; /* you already had this */
+  }
+  
+  /* 2) ensure your navbar isn’t “dark‑ened” by the black body */
+  /*    (only needed if your site’s navbar is inheriting its bg) */
+  body.project-page header#navbar {
+    /* if your normal navbar rule is, say, background: #242943; */
+    /* then simply re‑declare it here: */
+    background-color: #242943 !important;
+  
+    /* if your navbar uses a gradient or image, just copy that full rule here */
+  }
+  

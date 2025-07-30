@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Title | Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/project-page.css" />
+</head>
+
+<body class="is-preload project-page">
+
+  <!-- Minimalist nav (already on your site) -->
+  <header id="navbar">
+    <nav class="container">
+      <ul class="nav-links">
+        <li><a href="/portfolio/#banner">HOME</a></li>
+        <li><a href="/portfolio/#about">ABOUT</a></li>
+        <li><a href="/portfolio/#experience">EXPERIENCE</a></li>
+        <li><a href="/portfolio/#projects">PROJECTS</a></li>
+        <li><a href="/portfolio/#skills">SKILLS</a></li>
+        <li><a href="/portfolio/#contact">GET IN TOUCH</a></li>
+      </ul>      
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="project-title">Machine Learning based Gait Phase Classification</h1>
+    <hr class="divider">
+
+    <!-- LINKS -->
+    <section>
+      <h2>LINKS</h2>
+      <ul class="link-row">
+        <li><a href="https://github.com/preet-p-patel/Hall-sensor-model" target="_blank" rel="noopener">GitHub Repo</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Live Demo</a></li>
+      </ul>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section>
+      <h2>OVERVIEW</h2>
+      <p>
+        Knowing whether the prosthetic leg is in swing or stance phase is important because generally there are different controllers for each case. Traditionally, when experimenting this is found out using force sensors on treadmills, which limits testing to controlled environments. Alternatively, force sensors mounted on the prosthetic itself could be used, but they are expensive. This project aims to a cost effective solution using hall sensor and IMU data to classify gait phases (swing vs stance) using machine learning.
+
+We were provided with experimental datasets consisting of hall sensor readings, IMU readings, miscellaneous sensor readings and ground truth labels. A modular ML framework was developed to enable efficient preprocessing and experimentation with different model architectures and feature combinations. We primarily experimented with multilayer perceptrons (MLPs), tuning hyperparameters and testing various input feature sets. 
+
+Among several configurations, the best-performing model achieved a classification accuracy of 99.37%. The model was validated using test data and subsequently deployed on an actual prosthetic leg, where it was able to classify gait phases in real time.
+
+This approach offers a viable low-cost alternative to force-sensor based gait classification. It enables on-device inference using inexpensive sensors, making prosthetic testing and deployment more accessible. Future work could explore more generalised models across subjects and the integration with control strategies for real-time actuation. 
+      </p>
+    </section>
+
+    <!-- KEY ACHIEVEMENTS -->
+    <section>
+      <h2>KEY ACHIEVEMENTS</h2>
+      <ul class="bullet-list">
+        <li><strong>Feature 1</strong> — Description of a key feature or achievement from the project.</li>
+        <li><strong>Feature 2</strong> — Another significant accomplishment or technical challenge overcome.</li>
+        <li><strong>Feature 3</strong> — Additional contribution or improvement made.</li>
+        <li><strong>Impact</strong> — Quantifiable results or business impact achieved.</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
